@@ -43,14 +43,14 @@ Fine. We enacted a massive austerity program to cut welfare, in order to maintai
 
 We could give up a ministry or multiple ministries to the bourgeois parties in exchange for their support. However, this will ignite concerns among the leftist and labor factions within our party, who see this as a “sign of weakness” towards the bourgeois and a betrayal of the working class.
 
- - @give_up_labor_ministry: Give up the Labor Ministry to the Centre Party
- - @give_up_interior_ministry: Give up the Interior Ministry to the Centre Party
- - @give_up_finance_ministry: Give up the Finance Ministry to the DVP
- - @give_up_economic_ministry: Give up the Economic Ministry to the DVP
- - @give_up_justice_ministry: Give up the Justice Ministry to the DDP
- - @give_up_foreign_ministry: Give up the Foreign Ministry to the DVP
- - @give_up_agriculture_ministry: Give up the Agriculture Ministry to the DDP
- - @give_up_reichwehr_ministry: Give up the Reichswehr Ministry to General Groener 
+- @give_up_labor_ministry: Give up the Labor Ministry to the Centre Party
+- @give_up_interior_ministry: Give up the Interior Ministry to the Centre Party
+- @give_up_finance_ministry: Give up the Finance Ministry to the DVP
+- @give_up_economic_ministry: Give up the Economic Ministry to the DVP
+- @give_up_justice_ministry: Give up the Justice Ministry to the DDP
+- @give_up_foreign_ministry: Give up the Foreign Ministry to the DVP
+- @give_up_agriculture_ministry: Give up the Agriculture Ministry to the DDP
+- @give_up_reichwehr_ministry: Give up the Reichswehr Ministry to General Groener 
 
 @give_up_labor_ministry
 choose-if: labor_minister_party = “SPD”;
