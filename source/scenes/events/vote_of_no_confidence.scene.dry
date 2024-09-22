@@ -39,7 +39,7 @@ on-arrival: coalition_dissent = 0; workers_spd -= 10; umemployed_spd -= 10; work
 Fine. We enacted a massive austerity program to cut welfare, in order to maintain the stability of our coalition. The vote has been called off.
 
 @give_up_ministries
-view-if: ministries held >=4
+view-if: ministries held >= 4
 
 We could give up a ministry or multiple ministries to the bourgeois parties in exchange for their support. However, this will ignite concerns among the leftist and labor factions within our party, who see this as a “sign of weakness” towards the bourgeois and a betrayal of the working class.
 
@@ -56,7 +56,7 @@ We could give up a ministry or multiple ministries to the bourgeois parties in e
 choose-if: labor_minister_party = “SPD”;
 unavailable-subtitle: We do not hold the Labor Ministry
 subtitle: This will upset labor and the unions.
-on-arrival: coalition_dissent -= 1; labor_minister_party = “Z”; labor_minister = “Stegerwald”; labor_dissent += 15; left_dissent += 15; z_relation +=5
+on-arrival: coalition_dissent -= 1; labor_minister_party = “Z”; labor_minister = “Stegerwald”; labor_dissent += 15; left_dissent += 15; z_relation += 5
 
 Fine, we have given up the Labor Ministry. However, the bourgeois see this ministry as a “less important” ministry and are still deeply suspicious of our actions. The Labor and Left factions also sees this as a betrayal and an give to the bourgeois.
 
@@ -64,7 +64,7 @@ Fine, we have given up the Labor Ministry. However, the bourgeois see this minis
 choose-if: interior_minister_party = “SPD”;
 unavailable-subtitle: We do not hold the Interior Ministry
 subtitle: This all upset all factions of our party
-on-arrival : coalition_dissent -= 1; interior_minister_party = “Z”; interior_minister = “Wirth”; reformist-dissent += 5; left_dissent += 15; centrist_dissent +=10; labor_dissent +=5; z_relation +=5
+on-arrival : coalition_dissent -= 1; interior_minister_party = “Z”; interior_minister = “Wirth”; reformist-dissent += 5; left_dissent += 15; centrist_dissent += 10; labor_dissent += 5; z_relation += 5
 
 Fine, we have given up the Interior Ministry. This decision is opposed by all factions of our party. Leftists see this as a complete sell-out to the bourgeois. Even reformists are concerned with our decision, and the bourgeois is still suspicious of us, despite giving up the Interior Ministry. 
 
@@ -72,7 +72,7 @@ Fine, we have given up the Interior Ministry. This decision is opposed by all fa
 choose-if: finance_minister_party = “SPD”;
 unavailable-subtitle: We do not hold the Finance Ministry
 subtitle: This will displease the Labor and Left factions.
-on-arrival: finance_minister_party = “DVP”; finance_minister = “Moldenhauer”; coalition_dissent -=2; centrist_dissent +=10; leftist_dissent +=15; labor_dissent +=10; dvp_relation +=5;
+on-arrival: finance_minister_party = “DVP”; finance_minister = “Moldenhauer”; coalition_dissent -= 2; centrist_dissent += 10; leftist_dissent += 15; labor_dissent += 10; dvp_relation += 5;
 
 Fine, we have given up the Finance Ministry. This is criticized by centrists, labor, and leftists as another handover to the bourgeois. The DVP is pleased to see us give up the finance ministry, seeing an end to our “socialist” financial policies. 
 
@@ -80,23 +80,23 @@ Fine, we have given up the Finance Ministry. This is criticized by centrists, la
 choose-if: economic_minister_party = “SPD”;
 unavailable-subtitle: We do not hold the Economic Ministry
 subtitle: The will [? if year >= 1929 and month >= 10: significantly ?] upset the Labor and Left factions.
-on-arrival: economic_minister_party = “DVP”; economic_minister = “Curtius”; coalition_dissent -=2; labor_dissent +=10; labor_dissent +=5 if year >= 1929 and month >= 10; centrist_dissent +=5; reformist_dissent +=5; leftist_dissent +=15; leftist_dissent +=5 if year >= 1929 and month >= 10; ddp_relation +=5;
+on-arrival: economic_minister_party = “DVP”; economic_minister = “Curtius”; coalition_dissent -= 2; labor_dissent += 10; labor_dissent += 5 if year >= 1929 and month >= 10; centrist_dissent += 5; reformist_dissent += 5; leftist_dissent += 15; leftist_dissent += 5 if year >= 1929 and month >= 10; ddp_relation += 5;
 
 Fine, we have given up the Economic Ministry. This action is opposed by all factions of our party. [? if year >= 1929 and month >= 10: The Labor and Left factions are disgraced by this action, preventing them from implementing their economic plans in the midst of this crisis ?]
 
  - @give_up_justice_ministry
 choose-if: justice_minister_party = “SPD”;
 unavailable-subtitle: We do not hold the Justice Ministry
-subtitle: This is opposed by all factions of our party [? if judicial_reform <=2: , including Neorevisionists ?]
-on-arrival: justice_minister_party = “DDP”; justice_minister = “Koch-Weser”; coalition_dissent -=2; labor_dissent +=5; centrist_dissent +=5; reformist_dissent +=5; reformist_dissent +=5 if judicial_reform <=2; leftist_dissent +=15; neorevisionist_dissent +=5 if judicial_reform <=2;
+subtitle: This is opposed by all factions of our party [? if judicial_reform <= 2: , including Neorevisionists ?]
+on-arrival: justice_minister_party = “DDP”; justice_minister = “Koch-Weser”; coalition_dissent -= 2; labor_dissent += 5; centrist_dissent += 5; reformist_dissent += 5; reformist_dissent += 5 if judicial_reform <= 2; leftist_dissent += 15; neorevisionist_dissent += 5 if judicial_reform <= 2;
 
-Fine, we have given up the Justice Ministry. Reformists are [? if judicial_reform > 2: bothered ?][ if judicial_reform <= 2: disgusted ?] by the action, seeing it as compromising the stability of the Republic, while leftists strongly oppose the action due to another handover to the bourgeois. [? if judicial_reform <=2:  Neorevisionists also oppose our action due to its perceived harm to the Republic. ?]
+Fine, we have given up the Justice Ministry. Reformists are [? if judicial_reform > 2: bothered ?][ if judicial_reform <= 2: disgusted ?] by the action, seeing it as compromising the stability of the Republic, while leftists strongly oppose the action due to another handover to the bourgeois. [? if judicial_reform <= 2:  Neorevisionists also oppose our action due to its perceived harm to the Republic. ?]
 
  - @give_up_foreign_ministry
 choose-if: foreign_minister_party = “SPD”;
 unavailable-subtitle: We do not hold the Foreign Ministry
 subtitle: This is opposed by the Centrist faction, especially Breitscheid, and the Left faction
-on-arrival: foreign_minister_party = “DVP”; foreign_minister = “Stresemann”; foreign_minister = “Curtis” if stresemann_dead; coalition_dissent -=2; centrist_dissent +=10; leftist_dissent +=15; dvp_relation +=10; z_relation +=5 if z_party_leader = “Kaas”;
+on-arrival: foreign_minister_party = “DVP”; foreign_minister = “Stresemann” if stresemann_dead = 0; foreign_minister = “Curtis” if stresemann_dead = 1; coalition_dissent -= 2; centrist_dissent += 10; leftist_dissent += 15; dvp_relation += 10; z_relation += 5 if z_party_leader = “Kaas”;
 
 Fine, we have given up the Foreign Ministry. The DVP is pleased by this decision, while all factions of our party are united against this decision. Leftists oppose this action more strongly than any faction, wanting no overtures to the bourgeois. 
 
@@ -104,7 +104,7 @@ Fine, we have given up the Foreign Ministry. The DVP is pleased by this decision
 choose-if: agriculture_minister_party = “SPD”;
 unavailable-subtitle: We do not hold the Agriculture Ministry
 subtitle: This action is opposed the the Left and Labor factions
-on-arrival: agriculture_minister_party = “DDP”; agriculture_minister = “Dietrich”; labor_dissent +=5; leftist_dissent +=10; leftist_dissent +=5 if land_reform < 1; ddp_relation +=5; coalition_dissent -=2;
+on-arrival: agriculture_minister_party = “DDP”; agriculture_minister = “Dietrich”; labor_dissent += 5; leftist_dissent += 10; leftist_dissent += 5 if land_reform < 1; ddp_relation += 5; coalition_dissent -= 2;
 
 Fine, we have given up the Agriculture Ministry. Labor and leftists in our party oppose this decision due to their strong interest in agricultural policy, [? if land_reform < 1: especially land reform. ?]
 
@@ -112,7 +112,7 @@ Fine, we have given up the Agriculture Ministry. Labor and leftists in our party
 choose-if: reichswehr_ministry_party = “SPD”;
 unavailable-subtitle: We do not hold the Reichswehr Ministry
 subtitle: This action is opposed by all factions of our party, especially leftists and neorevisionists
-on-arrival: reichswehr_minister_party = “I”; reichswehr_minister = “Groener”; leftist_dissent +=15; neorevisionist_dissent +=10; reformist_dissent +=5; labor_dissent +=5; centrist_dissent +=5; dvp_relation +=10; z_relation +=10 if z_party_leader = “Kaas”; z_relation +=5 if z_party_leader = “Joos”; coalition_dissent = 0;
+on-arrival: reichswehr_minister_party = “I”; reichswehr_minister = “Groener”; leftist_dissent += 15; neorevisionist_dissent += 10; reformist_dissent += 5; labor_dissent += 5; centrist_dissent += 5; dvp_relation += 10; z_relation += 10 if z_party_leader = “Kaas”; z_relation += 5 if z_party_leader = “Joos”; coalition_dissent = 0;
 
 Fine, we have given up the Reichswehr Ministry. This decision scares neorevisionists and leftists who do not want to see the military in the hands of reactionary, or worse, fascist forces. Other factions are slightly opposed to this policy. The Centre and DVP are pleased that we gave up the Reichswehr Ministry. 
 
