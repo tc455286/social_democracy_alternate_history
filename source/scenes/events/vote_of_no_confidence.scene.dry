@@ -68,7 +68,7 @@ on-arrival : coalition_dissent -= 1; interior_minister_party = “Z”; interior
 
 Fine, we have given up the Interior Ministry. This decision is opposed by all factions of our party. Leftists see this as a complete sell-out to the bourgeois. Even reformists are concerned with our decision, and the bourgeois is still suspicious of us, despite giving up the Interior Ministry. 
 
-@give_up_finance_ministry
+ - @give_up_finance_ministry
 choose-if: finance_minister_party = “SPD”;
 unavailable-subtitle: We do not hold the Finance Ministry
 subtitle: This will displease the Labor and Left factions.
