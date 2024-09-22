@@ -39,7 +39,7 @@ on-arrival: coalition_dissent = 0; workers_spd -= 10; umemployed_spd -= 10; work
 Fine. We enacted a massive austerity program to cut welfare, in order to maintain the stability of our coalition. The vote has been called off.
 
 @give_up_ministries
-view-if: ministries held >= 4
+# view-if: ministries held >= 4
 
 We could give up a ministry or multiple ministries to the bourgeois parties in exchange for their support. However, this will ignite concerns among the leftist and labor factions within our party, who see this as a “sign of weakness” towards the bourgeois and a betrayal of the working class.
 
