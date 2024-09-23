@@ -96,9 +96,9 @@ Fine, we have given up the Justice Ministry. Reformists are [? if judicial_refor
 choose-if: foreign_minister_party == "SPD"
 unavailable-subtitle: We do not hold the Foreign Ministry
 subtitle: This is opposed by the Centrist faction, especially Breitscheid, and the Left faction
-on-arrival: foreign_minister_party = "DVP"; foreign_minister = "Stresemann" if stresemann_dead == 0; foreign_minister = “Curtis” if stresemann_dead == 1; coalition_dissent -= 2; centrist_dissent += 10; leftist_dissent += 15; dvp_relation += 10; z_relation += 5 if z_party_leader = “Kaas”
+on-arrival: foreign_minister_party = "DVP"; foreign_minister = "Stresemann" if stresemann_dead == 0; foreign_minister = “Curtis” if stresemann_dead == 1; coalition_dissent -= 2; centrist_dissent += 10; leftist_dissent += 15; dvp_relation += 10; z_relation += 5 if z_party_leader == "Kaas"
 
-Fine, we have given up the Foreign Ministry. The DVP is pleased by this decision, while all factions of our party are united against this decision. Leftists oppose this action more strongly than any faction, wanting no overtures to the bourgeois. 
+Fine, we have given up the Foreign Ministry. The DVP [? if z_party_leader == "Kaas": and Center ?] is pleased by this decision, while all factions of our party are united against this decision. Leftists oppose this action more strongly than any faction, wanting no overtures to the bourgeois. 
 
 @give_up_agriculture_ministry
 choose-if: agriculture_minister_party == "SPD"
@@ -112,7 +112,7 @@ Fine, we have given up the Agriculture Ministry. Labor and leftists in our party
 choose-if: reichswehr_ministry_party == "SPD"
 unavailable-subtitle: We do not hold the Reichswehr Ministry
 subtitle: This action is opposed by all factions of our party, especially leftists and neorevisionists
-on-arrival: reichswehr_minister_party = "I"; reichswehr_minister = "Groener"; leftist_dissent += 15; neorevisionist_dissent += 10; reformist_dissent += 5; labor_dissent += 5; centrist_dissent += 5; dvp_relation += 10; z_relation += 10 if z_party_leader = “Kaas”; z_relation += 5 if z_party_leader = “Joos”; coalition_dissent = 0
+on-arrival: reichswehr_minister_party = "I"; reichswehr_minister = "Groener"; leftist_dissent += 15; neorevisionist_dissent += 10; reformist_dissent += 5; labor_dissent += 5; centrist_dissent += 5; dvp_relation += 10; z_relation += 10 if z_party_leader == "Kaas"; z_relation += 5 if z_party_leader == "Joos"; coalition_dissent = 0
 
 Fine, we have given up the Reichswehr Ministry. This decision scares neorevisionists and leftists who do not want to see the military in the hands of reactionary, or worse, fascist forces. Other factions are slightly opposed to this policy. The Centre and DVP are pleased that we gave up the Reichswehr Ministry. 
 
