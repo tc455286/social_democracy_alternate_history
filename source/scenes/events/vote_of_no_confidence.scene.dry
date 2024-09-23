@@ -50,7 +50,7 @@ We could give up a ministry or multiple ministries to the bourgeois parties in e
 - @give_up_justice_ministry: Give up the Justice Ministry to the DDP
 - @give_up_foreign_ministry: Give up the Foreign Ministry to the DVP
 - @give_up_agriculture_ministry: Give up the Agriculture Ministry to the DDP
-- @give_up_reichwehr_ministry: Give up the Reichswehr Ministry to General Groener 
+- @give_up_reichswehr_ministry: Give up the Reichswehr Ministry to General Groener 
 
 @give_up_labor_ministry
 choose-if: labor_minister_party == "SPD"
