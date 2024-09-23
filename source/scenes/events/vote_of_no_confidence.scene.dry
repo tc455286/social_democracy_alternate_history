@@ -79,10 +79,10 @@ Fine, we have given up the Finance Ministry. This is criticized by centrists, la
 @give_up_economic_ministry
 choose-if: economic_minister_party == "SPD"
 unavailable-subtitle: We do not hold the Economic Ministry
-subtitle: The will [? if (year >= 1929 and month >= 10): significantly ?] upset the Labor and Left factions.
+subtitle: The will [? if black_thursday_seen == 1: significantly ?] upset the Labor and Left factions.
 on-arrival: economic_minister_party = "DVP"; economic_minister = "Curtius"; coalition_dissent -= 2; labor_dissent += 10; labor_dissent += 5 if year >= 1929 and month >= 10; centrist_dissent += 5; reformist_dissent += 5; leftist_dissent += 15; leftist_dissent += 5 if year >= 1929 and month >= 10; ddp_relation += 5
 
-Fine, we have given up the Economic Ministry. This action is opposed by all factions of our party. [? if (year >= 1929 and month >= 10): The Labor and Left factions are disgraced by this action, preventing them from implementing their economic plans in the midst of this crisis ?]
+Fine, we have given up the Economic Ministry. This action is opposed by all factions of our party. [? if black_thursday_seen == 1: The Labor and Left factions are disgraced by this action, preventing them from implementing their economic plans in the midst of this crisis ?]
 
 @give_up_justice_ministry
 choose-if: justice_minister_party == "SPD"
