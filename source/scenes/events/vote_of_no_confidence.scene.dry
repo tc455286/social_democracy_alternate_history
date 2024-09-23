@@ -96,7 +96,7 @@ Fine, we have given up the Justice Ministry. Reformists are [? if judicial_refor
 choose-if: foreign_minister_party == "SPD"
 unavailable-subtitle: We do not hold the Foreign Ministry
 subtitle: This is opposed by the Centrist faction, especially Breitscheid, and the Left faction
-on-arrival: foreign_minister_party = "DVP"; foreign_minister = "Stresemann" if stresemann_dead == 0; foreign_minister = “Curtis” if stresemann_dead == 1; coalition_dissent -= 2; centrist_dissent += 10; leftist_dissent += 15; dvp_relation += 10; z_relation += 5 if z_party_leader == "Kaas"
+on-arrival: foreign_minister_party = "DVP"; foreign_minister = "Stresemann" if stresemann_dead == 0; foreign_minister = "Curtis" if stresemann_dead == 1; coalition_dissent -= 2; centrist_dissent += 10; leftist_dissent += 15; dvp_relation += 10; z_relation += 5 if z_party_leader == "Kaas"
 
 Fine, we have given up the Foreign Ministry. The DVP [? if z_party_leader == "Kaas": and Center ?] is pleased by this decision, while all factions of our party are united against this decision. Leftists oppose this action more strongly than any faction, wanting no overtures to the bourgeois. 
 
