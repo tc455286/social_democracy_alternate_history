@@ -90,7 +90,7 @@ unavailable-subtitle: We do not hold the Justice Ministry
 subtitle: This is opposed by all factions of our party [? if judicial_reform <= 2: , including Neorevisionists ?]
 on-arrival: justice_minister_party = "DDP"; justice_minister = "Koch-Weser"; coalition_dissent -= 2; labor_dissent += 5; centrist_dissent += 5; reformist_dissent += 5; reformist_dissent += 5 if judicial_reform <= 2; leftist_dissent += 15; neorevisionist_dissent += 5 if judicial_reform <= 2
 
-Fine, we have given up the Justice Ministry. Reformists are [? if judicial_reform > 2: bothered ?][ if judicial_reform <= 2: disgusted ?] by the action, seeing it as compromising the stability of the Republic, while leftists strongly oppose the action due to another handover to the bourgeois. [? if judicial_reform <= 2:  Neorevisionists also oppose our action due to its perceived harm to the Republic. ?]
+Fine, we have given up the Justice Ministry. Reformists are [? if judicial_reform > 2: bothered ?][? if judicial_reform <= 2: disgusted ?] by the action, seeing it as compromising the stability of the Republic, while leftists strongly oppose the action due to another handover to the bourgeois. [? if judicial_reform <= 2:  Neorevisionists also oppose our action due to its perceived harm to the Republic. ?]
 
 @give_up_foreign_ministry
 choose-if: foreign_minister_party == "SPD"
