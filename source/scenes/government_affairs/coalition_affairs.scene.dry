@@ -47,6 +47,7 @@ We could give up a ministry or multiple ministries to the bourgeois parties in e
 - @give_up_foreign_ministry: Give up the Foreign Ministry to the DVP
 - @give_up_agriculture_ministry: Give up the Agriculture Ministry to the DDP
 - @give_up_reichswehr_ministry: Give up the Reichswehr Ministry to General Groener 
+- @another_way: We must deal with this another way to avoid dissent within our party.
 
 @give_up_labor_ministry
 choose-if: labor_minister_party == "SPD"
@@ -112,6 +113,14 @@ on-arrival: reichswehr_minister_party = "I"; reichswehr_minister = "Groener"; le
 
 Fine, we have given up the Reichswehr Ministry. This decision scares neorevisionists and leftists who do not want to see the military in the hands of reactionary, or worse, fascist forces. Other factions are slightly opposed to this policy. The Centre and DVP are pleased that we gave up the Reichswehr Ministry. 
 
+@another_way
+
+- @promise_cuts: Agree to the bourgeois plans to cut welfare.
+- @resources: Use our party resources to support our allies.
+- @give_up_ministries: We could give up a ministry we hold.
+- @bring_down: Instead, we will bring down the government with a no-confidence vote, and call for new elections.
+- @no_change: Take none of these actions.
+- @easy_discard
 
 @no_change
 
