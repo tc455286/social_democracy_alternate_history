@@ -138,7 +138,7 @@ Q.sa_strength = 80;
 Q.sa_militancy = 0.5;
 Q.sa_banned = 0;
 Q.sa_banned_prussia = 0;
-Q.nasdap_effectiveness = 1;
+Q.nsdap_effectiveness = 1;
 // The DNVP was already in decline by 1928
 Q.dnvp_effectiveness = 0.8;
 Q.rfb_strength = 130;
