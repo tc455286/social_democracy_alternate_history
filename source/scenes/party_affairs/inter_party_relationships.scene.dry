@@ -92,8 +92,8 @@ The liberal parties (both the DDP and DVP) are electorally moribund, so perhaps 
 However, given the influence of the DVP among the other right-leaning parties[? if president == "Hindenburg": and with President Hindenburg ?], it can still be helpful to influence them.
 
 @fascists
-subtitle: -1 resources;
-choose-if: resources >= 1;
+subtitle: -1 resources
+choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: nasdap_effectivness -= 0.05*(1 - dissent); nasdap_effectiveness -= 0.03*(1 - dissent) if iron_front_formed == 1; dnvp_effectivness -=0.05*(1 - dissent); dnvp_effectivness -=0.03*(1 - dissent) if iron_front_formed == 1; nazi_urgency += 1 if nazi_urgency < 3; resources -= 1;
 
