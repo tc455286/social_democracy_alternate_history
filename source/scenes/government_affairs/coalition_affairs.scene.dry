@@ -35,7 +35,8 @@ on-arrival: resources -= 2; coalition_dissent -= 1
 By transferring campaign funds to our coalition partners, we can make our policies more acceptable to them. Some would call this corruption, but perhaps it is necessary to save democracy.
 
 @give_up_ministries
-# view-if: ministries held >= 4
+choose-if: ministries_held >= 4
+unavailable-subtitle: We do not hold enough ministries for the Right to accept a ministry handover.
 
 We could give up a ministry or multiple ministries to the bourgeois parties in exchange for their support. However, this will ignite concerns among the leftist and labor factions within our party, who see this as a “sign of weakness” towards the bourgeois and a betrayal of the working class.
 
