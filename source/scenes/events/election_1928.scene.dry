@@ -1171,7 +1171,7 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 5
 view-if: labor_minister_party != "SPD"
-on-arrival: leverage -= 5; labor_minister_party = "SPD"; labor_minister = "Wissell"
+on-arrival: leverage -= 5; labor_minister_party = "SPD"; labor_minister = "Wissell"; ministries_held += 1;
 go-to: ministries
 
 Rudolf Wissell of the SPD has been appointed labor minister.
@@ -1183,7 +1183,7 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 5
 view-if: interior_minister_party != "SPD"
-on-arrival: leverage -= 5; interior_minister_party = "SPD"; interior_minister = "Severing"
+on-arrival: leverage -= 5; interior_minister_party = "SPD"; interior_minister = "Severing"; ministries_held += 1;
 go-to: ministries
 
 Carl Severing of the SPD has been appointed Interior Minister.
@@ -1195,7 +1195,7 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
 view-if: finance_minister_party != "SPD"
-on-arrival: leverage -= 10; finance_minister_party = "SPD"; finance_minister = "Hilferding"
+on-arrival: leverage -= 10; finance_minister_party = "SPD"; finance_minister = "Hilferding"; ministries_held += 1;
 go-to: ministries
 
 Rudolf Hilferding of the SPD has been appointed Finance Minister.
@@ -1207,7 +1207,7 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
 view-if: economic_minister_party != "SPD"
-on-arrival: leverage -= 10; economic_minister_party = "SPD"; economic_minister = "Schmidt"
+on-arrival: leverage -= 10; economic_minister_party = "SPD"; economic_minister = "Schmidt"; ministries_held += 1;
 go-to: ministries
 
 Robert Schmidt of the SPD has been appointed Economic Minister.
@@ -1219,7 +1219,7 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
 view-if: justice_minister_party != "SPD"
-on-arrival: leverage -= 10; justice_minister_party = "SPD"; justice_minister = "Radbruch"
+on-arrival: leverage -= 10; justice_minister_party = "SPD"; justice_minister = "Radbruch"; ministries_held += 1;
 go-to: ministries
 
 Gustav Radbruch of the SPD has been appointed Justice Minister.
@@ -1231,7 +1231,7 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
 view-if: foreign_minister_party != "SPD"
-on-arrival: leverage -= 10; foreign_minister_party = "SPD"; foreign_minister = "Breitscheid"
+on-arrival: leverage -= 10; foreign_minister_party = "SPD"; foreign_minister = "Breitscheid"; ministries_held += 1;
 go-to: ministries
 
 Rudolf Breitscheid of the SPD has been appointed Foreign Minister.
@@ -1243,7 +1243,7 @@ subtitle: This is not our usual domain.
 unavailable-subtitle: We do not have enough leverage.
 choose-if: leverage >= 10 
 view-if: agriculture_minister_party != "SPD"
-on-arrival: leverage -= 10; agriculture_minister_party = "SPD"; agriculture_minister = "Baade"
+on-arrival: leverage -= 10; agriculture_minister_party = "SPD"; agriculture_minister = "Baade"; ministries_held += 1;
 go-to: ministries
 tags: mins_1928
 
@@ -1256,7 +1256,7 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 15 
 view-if: reichswehr_minister_party != "SPD"
-on-arrival: leverage -= 15; reichswehr_minister_party = "SPD"; reichswehr_minister = "Leber"
+on-arrival: leverage -= 15; reichswehr_minister_party = "SPD"; reichswehr_minister = "Leber"; ministries_held += 1;
 go-to: ministries
 
 Julius Leber of the SPD has been appointed Reichswehr Minister.
@@ -1273,55 +1273,55 @@ This coalition arrangement is tolerable to all.
 @drop_labor
 title: Drop the Labor Ministry.
 view-if: labor_minister_party = "SPD"
-on-arrival: labor_minister_party = "Z"; labor_minister = "Stegerwald"; leverage += 5;
+on-arrival: labor_minister_party = "Z"; labor_minister = "Stegerwald"; leverage += 5; ministries_held -= 1;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_interior
 title: Drop the Interior Ministry.
 view-if: interior_minister_party = "SPD"
-on-arrival: interior_minister_party = "Z"; interior_minister = "Wirth"; leverage += 5;
+on-arrival: interior_minister_party = "Z"; interior_minister = "Wirth"; leverage += 5; ministries_held -= 1;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_finance
 title: Drop the Finance Ministry.
 view-if: finance_minister_party = "SPD"
-on-arrival: finance_minister_party = "DVP"; finance_minister = "Moldenhauer"; leverage += 10; finance_minister_party = "DDP" if in_weimar_coalition or in_popular_front;
+on-arrival: finance_minister_party = "DVP"; finance_minister = "Moldenhauer"; leverage += 10; finance_minister_party = "DDP" if in_weimar_coalition or in_popular_front; ministries_held -= 1;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_economic
 title: Drop the Economic Ministry.
 view-if: economic_minister_party = "SPD"
-on-arrival: economic_minister_party = "DVP"; economic_minister = "Curtius"; leverage += 10; economic_minister_party = "Z" if in_weimar_coalition or in_popular_front;
+on-arrival: economic_minister_party = "DVP"; economic_minister = "Curtius"; leverage += 10; economic_minister_party = "Z" if in_weimar_coalition or in_popular_front; ministries_held -= 1;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_justice
 title: Drop the Justice Ministry.
 view-if: justice_minister_party = "SPD"
-on-arrival: justice_minister_party = "DDP"; justice_minister = "Koch-Weser"; leverage += 10;
+on-arrival: justice_minister_party = "DDP"; justice_minister = "Koch-Weser"; leverage += 10; ministries_held -= 1;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_foreign
 title: Drop the Foreign Ministry.
 view-if: foreign_minister_party = "SPD"
-on-arrival: foreign_minister_party = "DVP"; foreign_minister = "Stresemann"; foreign_minister = "Curtius" if streseman_dead; leverage += 10; foreign_minister_party = "Z" if in_weimar_coalition or in_popular_front;
+on-arrival: foreign_minister_party = "DVP"; foreign_minister = "Stresemann"; foreign_minister = "Curtius" if streseman_dead; leverage += 10; foreign_minister_party = "Z" if in_weimar_coalition or in_popular_front; ministries_held -= 1;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_agriculture
 title: Drop the Agriculture Ministry.
 view-if: agriculture_minister_party = "SPD"
-on-arrival: agriculture_minister_party = "DDP"; agriculture_minister = "Dietrich"; leverage += 10;
+on-arrival: agriculture_minister_party = "DDP"; agriculture_minister = "Dietrich"; leverage += 10; ministries_held -= 1;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_reichswehr
 title: Drop the Reichswehr Ministry.
 view-if: reichswehr_minister_party = "SPD"
-on-arrival: reichswehr_minister_party = "I"; reichswehr_minister = "Groener"; leverage += 15;
+on-arrival: reichswehr_minister_party = "I"; reichswehr_minister = "Groener"; leverage += 15; ministries_held -= 1;
 tags: drop_mins_1928
 go-to: ministries
