@@ -97,7 +97,7 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: nsdap_effectivness -= 0.05*(1 - dissent); nsdap_effectiveness -= 0.03*(1 - dissent) if iron_front_formed == 1; dnvp_effectivness -=0.05*(1 - dissent); dnvp_effectivness -=0.03*(1 - dissent) if iron_front_formed == 1; nazi_urgency += 1 if nazi_urgency < 3; resources -= 1;
 
-We have infiltrated SA and Stalhelm rallies, learning about the tactics the fascists use to gain support. As a result, we are able to better counter their rhetoric, which weakenens their campaigning abilities, and reduces recruiting to the SA and Stalhelm.
+We have infiltrated SA and Stahlhelm rallies, learning about the tactics the fascists use to gain support. As a result, we are able to better counter their rhetoric, which weakenens their campaigning abilities, and reduces recruiting to the SA and Stahlhelm.
 
 @spd_alone
 
