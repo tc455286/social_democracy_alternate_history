@@ -19,7 +19,7 @@ This is a bourgeois dispute, but the costs will be borne by the proletariat. The
 
 @nothing_to_do
 view-if: spd_in_government = 1
-on-arrival: welfare -= 1; workers_spd -= 3; unemployed_spd -= 3; pro_republic -= 3
+on-arrival: welfare -= 1; workers_spd -= 3; unemployed_spd -= 3; pro_republic -= 3; nsdap_effectiveness += 0.05;
 
 There is, essentially, nothing we can do.
 
