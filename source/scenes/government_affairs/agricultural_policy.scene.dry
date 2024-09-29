@@ -41,7 +41,7 @@ We have increased financial support for small farmers, providing access to credi
 title: Food Procurement
 subtitle: -1 budget - Provide inexpensive food for workers.
 choose-if: budget >= 1
-on-arrival: budget -= 1; pro_consumer += 1; workers_spd += 4*(1-dissent); unemployed_spd += 4*(1-dissent); workers_sol += 4; coalition_dissent += 1 if black_thursday_seen; nsdap_effectiveness -= 0.05; nsdap_effectiveness -= 0.03 if black_thursday_seen == 1;
+on-arrival: budget -= 1; pro_consumer += 1; workers_spd += 4*(1-dissent); unemployed_spd += 4*(1-dissent); workers_sol += 4; coalition_dissent += 1 if black_thursday_seen; nsdap_effectiveness -= 0.05; nsdap_effectiveness -= 0.03 if unemployed > 10;
 
 We have increased state purchasing of food staples to provide to urban workers and the poor. This benefits workers more than it benefits farmers, as we are negotiating for lower purchase prices. [? if black_thursday_seen and (in_weimar_coalition or in_grand_coalition) : Our coalition partners consider this policy to be a wasteful handout. ?]
 
