@@ -65,7 +65,7 @@ The Reichsbanner number at [+ rb_strength +] thousand; many are in Berlin to cou
 
 
 @fight_2_win
-on-arrival: coup_progress = 0; sa_strength *= 0.6; sh_strength *= 0.6; workers_nsdap -= 12*(1-dissent); unemployed_nsdap -= 10*(1-dissent); new_middle_nsdap -= 6*(1-dissent); workers_spd += 8*(1-dissent); unemployed_spd += 6*(1-dissent); pro_republic += 15; nsdap_effectiveness -= 0.50; dnvp_effectiveness -= 0.50; z_party_leader = "Joos" if z_party_leader == "Kaas"; z_relation += 20; dvp_relation += 20; ddp_relation += 10;
+on-arrival: coup_progress = 0; sa_strength *= 0.6; sh_strength *= 0.6; workers_nsdap -= 12*(1-dissent); unemployed_nsdap -= 10*(1-dissent); new_middle_nsdap -= 6*(1-dissent); workers_spd += 8*(1-dissent); unemployed_spd += 6*(1-dissent); pro_republic += 15; nsdap_effectiveness -= 0.50; dnvp_effectiveness -= 0.50; z_party_leader = "Joos" if z_party_leader == "Kaas"; z_relation += 20; dvp_relation += 20; ddp_relation += 10; coup_defeated = 1;
 achievement: drei_pfeile
 
 Our forces confront the fascists, and somehow, the fascists retreat! They were overwhelmed by our display of strength, and have chosen to slink away. The attempted coup is over, at least for now. Capital is intimided by our show of force and has temporarilly retracted any threats of a capital strike. [if z_party_leader == "Kaas": In response to our victory, the Center Party has recalled Ludwig Kaas as party chairman and replaces him with the more pro-republic Joseph Joos. ?] The Center and DVP have become friendlier towards us after this victory for the republic.
