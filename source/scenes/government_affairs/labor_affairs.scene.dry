@@ -20,19 +20,19 @@ The industrial Ruhr region is aflame with labor unrest. The employers have start
 
 @support_labor
 subtitle: Popular among the workers, this will alienate the bourgeoisie.
-on-arrival: labor_strength += 5; labor_dissent -= 5; left_dissent -= 5; workers_spd += 6*(1-dissent); coalition_dissent += 1; dvp_relation -= 4; capital_strike_progress += 1 if dvp_relation <= 30; capital_strike_progress += 1 if unemployed > 15; capital_strike_progress += 1 if unemployed > 24; labor_goal_completed += 1; inflation += 0.1; pro_labor += 1
+on-arrival: labor_strength += 5; labor_dissent -= 5; left_dissent -= 5; workers_spd += 6*(1-dissent); coalition_dissent += 1; dvp_relation -= 4; capital_strike_progress += 1 if dvp_relation <= 30; capital_strike_progress += 1 if unemployed > 15; capital_strike_progress += 1 if unemployed > 24; labor_goal_completed += 1; inflation += 0.1; pro_labor += 1; nsdap_effectiveness -= 0.1; dnvp_effectiveness += 0.03;
 
 Supporting labor is always popular in the SPD, although many of our coalition partners represent employers, and they are less enthused.
 
 @support_employers
 subtitle: Popular among the bourgeoisie, much less so among the workers.
-on-arrival: labor_dissent += 8; workers_spd -= 3; coalition_dissent -= 1; dvp_relation += 5; z_relation += 5; workers_kpd += 3; kpd_coalition_dissent += 1; kpd_relation -= 8; capital_strike_progress -= 1 if capital_strike_progress > 1; capital_strike_progress -= 1 if capital_strike_progress > 8; pro_labor -= 1
+on-arrival: labor_dissent += 8; workers_spd -= 3; coalition_dissent -= 1; dvp_relation += 5; z_relation += 5; workers_kpd += 3; kpd_coalition_dissent += 1; kpd_relation -= 8; capital_strike_progress -= 1 if capital_strike_progress > 1; capital_strike_progress -= 1 if capital_strike_progress > 8; pro_labor -= 1; nsdap_effectiveness += 0.05; nsdap_effectiveness += 0.05 if unemployed > 10; nsdap_effectiveness += 0.1 if unemployed > 20; dnvp_effectiveness -= 0.03;
 
 The more radical workers despise our suppression of their strikes, recalling the days of Friedrich Ebert.
 
 @balance
 subtitle: Both sides need to share the pain in the current crisis.
-on-arrival: labor_dissent += 4; workers_spd -= 2; kpd_coalition_dissent += 1; kpd_relation -= 5
+on-arrival: labor_dissent += 4; workers_spd -= 2; kpd_coalition_dissent += 1; kpd_relation -= 5; nsdap_effectiveness += 0.05 if unemployed > 10;
 
 Many workers are unhappy at our compromises, but they will learn to accept that we are all in a shared struggle against economic forces.
 
