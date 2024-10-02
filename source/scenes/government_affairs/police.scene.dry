@@ -32,7 +32,7 @@ Current interior police loyalty: [+ interior_police_loyalty : loyalty +]
 go-to: investigate_corruption_success if interior_police_loyalty >= 0.5; investigate_corruption_failure if interior_police_loyalty < 0.5
 
 @investigate_corruption_success
-on-arrival: investigate_corruption += 1; workers_spd += 5*(1-dissent); inflation -= 0.1 if inflation > 3; inflation -= 0.2 if inflation >= 8; nsdap_effectiveness -= 0.05; dnvp_effectiveness -= 0.05; capital_strike_progress -= 1; capital_strike_progress -= 1 if interior_police_loyalty >= 0.7; capital_strike_progress -1 if judicial_reform >= 4;
+on-arrival: investigate_corruption += 1; workers_spd += 5*(1-dissent); inflation -= 0.1 if inflation > 3; inflation -= 0.2 if inflation >= 8; nsdap_effectiveness -= 0.05; dnvp_effectiveness -= 0.05; capital_strike_progress -= 1; capital_strike_progress -= 1 if interior_police_loyalty >= 0.7; capital_strike_progress -= 1 if judicial_reform >= 4;
 
 Corruption in big business is rampant, of course. We have uncovered a number of scandals, and publicizing them brings new attention to the work of Interior Minister [+ interior_minister +], building up his popular appeal and that of the SPD.
 
