@@ -25,13 +25,13 @@ As a people's party, we represent the employees and small businesspeople of the 
 title: Campaign in rural areas.
 choose-if: rural_policy > 0
 unavailable-subtitle: We have not enacted any rural policies yet.
-on-arrival: rural_spd += 6*(1-dissent)
+on-arrival: rural_spd += 6*(1-dissent); nsdap_effectiveness -= 0.03; dnvp_effectiveness -= 0.03;
 
 As a people's party, we represent farmers and rural workers as well, and they are becoming receptive to our messages.
 
 @campaign_unemployed
 title: Campaign among the unemployed.
-on-arrival: unemployed_spd += 5*(1-dissent);
+on-arrival: unemployed_spd += 5*(1-dissent); nsdap_effectiveness -= 0.03 if unemployed > 10;
 
 As a people's party, the urban poor are still a key part of our constituency.
 
