@@ -8,12 +8,12 @@ if (Q.works_program && Q.works_program >= 2) {
     Q.inflation += 1
 }
 Q.nsdap_effectiveness += 0.05;
-Q.sa_strength += 100;
-Q.sh_strength += 100;
-Q.sa_militancy += 0.05;
-Q.old_middle_nsdap += 6;
-Q.rural_nsdap += 4;
-Q.unemployed_nsdap += 4;
+Q.sa_strength += 100*(nsdap_effectiveness);
+Q.sh_strength += 100*(dnvp_effectiveness);
+Q.sa_militancy += 0.05*(nsdap_effectiveness);
+Q.old_middle_nsdap += 6*(nsdap_effectiveness);
+Q.rural_nsdap += 4*(nsdap_effectiveness);
+Q.unemployed_nsdap += 4*(nsdap_effectiveness);
 if (Q.old_demographics) {
     Q.catholics_z += 5;
 }
@@ -24,26 +24,26 @@ if (!Q.works_program) {
     Q.workers -= 5;
     Q.rural_dnvp -= 6;
     Q.nsdap_effectiveness += 0.15;
-    Q.rural_nsdap += 8; 
-    Q.new_middle_nsdap += 10; 
-    Q.old_middle_nsdap += 10;
-    Q.unemployed_nsdap += 6;
-    Q.workers_nsdap += 5;
+    Q.rural_nsdap += 8*(nsdap_effectiveness);
+    Q.new_middle_nsdap += 10*(nsdap_effectiveness);
+    Q.old_middle_nsdap += 10*(nsdap_effectiveness);
+    Q.unemployed_nsdap += 6*(nsdap_effectiveness);
+    Q.workers_nsdap += 5*(nsdap_effectiveness);
     Q.workers_kpd += 5;
-    Q.sa_strength += 200;
+    Q.sa_strength += 200*(nsdap_effectiveness);
 } else if (Q.unemployed > 25) {
     Q.nsdap_effectiveness += 0.1;
-    Q.rural_nsdap += 5;
-    Q.unemployed_nsdap += 5;
-    Q.old_middle_nsdap += 5;
-    Q.new_middle_nsdap += 4;
-    Q.sa_strength += 50;
+    Q.rural_nsdap += 5*(nsdap_effectiveness);
+    Q.unemployed_nsdap += 5*(nsdap_effectiveness);
+    Q.old_middle_nsdap += 5*(nsdap_effectiveness);
+    Q.new_middle_nsdap += 4*(nsdap_effectiveness);
+    Q.sa_strength += 50*(nsdap_effectiveness);
 } else if (Q.unemployed > 20) {
     Q.nsdap_effectiveness += 0.05;
-    Q.rural_nsdap += 2;
-    Q.unemployed_nsdap += 2;
-    Q.old_middle_nsdap += 2;
-    Q.new_middle_nsdap += 2;
+    Q.rural_nsdap += 2*(nsdap_effectiveness);
+    Q.unemployed_nsdap += 2*(nsdap_effectiveness);
+    Q.old_middle_nsdap += 2*(nsdap_effectiveness);
+    Q.new_middle_nsdap += 2*(nsdap_effectiveness);
 }
 !}
 tags: event
