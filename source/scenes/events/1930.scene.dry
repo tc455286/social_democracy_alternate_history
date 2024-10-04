@@ -10,26 +10,26 @@ if (Q.old_demographics) {
     Q.catholics_z += 3;
 }
 Q.nsdap_effectiveness += 0.05;
-Q.rural_nsdap += 15; 
+Q.rural_nsdap += 15*(nsdap_effectiveness);
 Q.rural_dnvp -= 15;
 Q.new_middle_dvp -= 5;
 Q.old_middle_dvp -= 5;
 Q.new_middle_ddp -= 10;
 Q.old_middle_ddp -= 10;
-Q.new_middle_nsdap += 10; 
-Q.old_middle_nsdap += 15;
+Q.new_middle_nsdap += 10*(nsdap_effectiveness);
+Q.old_middle_nsdap += 15*(nsdap_effectiveness);
 Q.new_middle_other += 5;
 Q.old_middle_other += 5;
-Q.unemployed_nsdap += 7;
+Q.unemployed_nsdap += 7*(nsdsp_effectiveness);
 Q.rural_other += 5;
 Q.workers_other += 5;
 Q.workers_kpd += 3;
 Q.workers_z += 3;
 Q.old_middle_z += 2;
 Q.new_middle_z += 2;
-Q.workers_nsdap += 3;
-Q.sa_strength += 100;
-Q.sh_strength += 100;
+Q.workers_nsdap += 3*(nsdap_effectiveness);
+Q.sa_strength += 100*(nsdap_effectiveness);
+Q.sh_strength += 100*(dnvp_effectiveness);
 if (Q.budget > 0) {
     Q.budget -= 1;
 }
