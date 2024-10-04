@@ -1,7 +1,7 @@
 title: Stahlhelm unbanned
 subtitle: The judges have re-legalized the Stahlhelm.
 view-if: sh_banned == 1 and sh_ban_timer == 0 and judicial_reform < 2
-on-arrival: sh_banned = 0; dnvp_effectiveness += 0.1; sh_strength += 100; sh_militancy += 0.01
+on-arrival: sh_banned = 0; dnvp_effectiveness += 0.1; sh_strength += 100*(dnvp_effectiveness); sh_militancy += 0.01*(dnvp_effectiveness);
 tags: event
 
 Judges have ordered the Stahlhelm to be re-legalized. They immediately return to mass recruiting.
