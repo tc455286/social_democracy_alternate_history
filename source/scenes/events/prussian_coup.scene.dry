@@ -55,6 +55,6 @@ Our forces confront the government troops and their supporters on the streets of
 
 @surrender
 title: Give up on the Prussian government.
-on-arrival: spd_prussia = 0; workers_spd -= 5; left_dissent += 10; labor_dissent += 10; rb_militancy = rb_militancy/2; rb_strength -= 1000;
+on-arrival: spd_prussia = 0; workers_spd -= 5; left_dissent += 10; labor_dissent += 10; rb_militancy = rb_militancy/2; rb_strength -= 1000; nsdap_effectiveness += 0.15; dnvp_effectiveness += 0.1;
 
 A pall of hopelessness and despair descends over social democracy. We have failed. Many in the Reichsbanner simply quit, demoralized by their leaders' lack of a call to action.
