@@ -7,11 +7,11 @@ on-arrival: nsdap_effectiveness += 0.1; workers_nsdap += 3*(nsdap_effectiveness)
 
 Horst Wessel, a member of the Nazi SA has been killed by, supposedly, two Communists. The Nazi Party sees him as a martyr, and has used this opportunity to increase recuriting to the SA and gain support for their party. How should we respond to this events.
 
-- @arm_rb - Increasing funding to the Reichsbanner to keep up with the growing strength of the SA. -2 resources
+- @arm_rb2 - Increase funding to the Reichsbanner to keep up with the growing strength of the SA. -2 resources
 - @warn - This is a concerning development and our members need to stay vigilant about the Nazis. 
 - @do_nothing - This is just a one-off event for the Nazis, it is no cause for concern.
 
-@arm_rb
+@arm_rb2
 choose if resources >= 2
 on-arrival: resources -= 2; rb_militancy += 0.02; rb_strength += 100; nazi_urgency += 1; pro_republic += 2; nsdap_effectiveness -= 0.03; reformist_dissent -= 5; neorevisionist_dissent -= 15 if neorevisionism == 1; left_dissent -= 10;
 
