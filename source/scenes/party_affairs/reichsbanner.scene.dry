@@ -4,7 +4,7 @@ is-card: true
 tags: party_affairs
 view-if: reichsbanner_timer <= 0
 card-image: img/reichsbanner.jpg
-on-arrival: {! 
+on-arrival: {
 Q.month_actions += 1; 
 Q.reichsbanner_timer += 6; 
 if (Q.rb_militancy <= 0.1) {
@@ -20,7 +20,7 @@ if (Q.rb_militancy <= 0.1) {
 } else {
   Q.rb_militarization_cost = 1;
 }
-!}
+}
 max-visits: 5
 
 = Reichsbanner
