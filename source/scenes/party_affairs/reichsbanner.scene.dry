@@ -4,7 +4,20 @@ is-card: true
 tags: party_affairs
 view-if: reichsbanner_timer <= 0
 card-image: img/reichsbanner.jpg
-on-arrival: month_actions += 1; reichsbanner_timer += 6; rb_militarization_cost = 2 if (rb_militancy > 0.1 and <= 0.25); 
+on-arrival: month_actions += 1; reichsbanner_timer += 6; 
+if (rb_militancy <= 0.1) {
+  rb_militarization_cost = 1 
+} else if (rb_militancy > 0.1 and <= 0.25) 
+  rb_militarization_cost = 2
+} else if (rb_militancy > 0.25 and <= 0.5)
+  rb_militarization_cost = 3
+} else if (rb_militancy > 0.5 and <= 0.7)
+  rb_militarization_cost = 4
+} else if (rb_militancy > 0.7)
+  rb_militarization_cost = 5
+} else {
+  rb_militarization_cost = 1
+}
 max-visits: 5
 
 = Reichsbanner
