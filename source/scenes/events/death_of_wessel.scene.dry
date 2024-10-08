@@ -1,9 +1,9 @@
-title: The Death of Horst Wessel
-view-if: year == 1930 and month >= 2
-frequency: 1000
-max-visits: 1
-tags: event
-on-arrival: nsdap_effectiveness += 0.1; workers_nsdap += 3*(nsdap_effectiveness); new_middle_nsdap += 3*(nsdap_effectiveness); old_middle_nsdap += 3*(nsdap_effectiveness); rural_nsdap += 5*(nsdap_effectiveness); unemployed_nsdap += 5*(nsdap_effectiveness); sa_strength += 100*(nsdap_effectiveness); sa_militancy += 0.02*(nsdap_effectiveness); pro_republic -= 3; 
+# title: The Death of Horst Wessel
+# view-if: year == 1930 and month >= 2
+# frequency: 1000
+# max-visits: 1
+# tags: event
+# on-arrival: nsdap_effectiveness += 0.1; workers_nsdap += 3*(nsdap_effectiveness); new_middle_nsdap += 3*(nsdap_effectiveness); old_middle_nsdap += 3*(nsdap_effectiveness); rural_nsdap += 5*(nsdap_effectiveness); unemployed_nsdap += 5*(nsdap_effectiveness); sa_strength += 100*(nsdap_effectiveness); sa_militancy += 0.02*(nsdap_effectiveness); pro_republic -= 3; 
 
 Horst Wessel, a member of the Nazi SA has been killed by, supposedly, two Communists. The Nazi Party sees him as a martyr, and has used this opportunity to increase recuriting to the SA and gain support for their party. How should we respond to this events.
 
