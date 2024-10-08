@@ -20,7 +20,7 @@ if (Q.rb_militancy <= 0.1) {
 } else {
   Q.rb_militarization_cost = 1;
 }
-!}
+}
 max-visits: 5
 
 = Reichsbanner
