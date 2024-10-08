@@ -17,8 +17,6 @@ if (Q.rb_militancy <= 0.1) {
   Q.rb_militarization_cost = 4;
 } else if (Q.rb_militancy > 0.7) {
   Q.rb_militarization_cost = 5;
-} else {
-  Q.rb_militarization_cost = 1;
 }
 !}
 max-visits: 5
