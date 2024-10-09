@@ -9,10 +9,8 @@ Q.month_actions += 1;
 Q.reichsbanner_timer += 6;
 if (Q.rb_militancy <= 0.1) {
   Q.rb_militarization_cost = 1;
-} else if (Q.rb militancy > 0.1 and <= 0.25) {
-  Q.rb_militarization_cost = 2;
 } else {
-  Q.rb_militarization_cost = 3;
+  Q.rb_militarization_cost = 2;
 }
 !}
 max-visits: 5
