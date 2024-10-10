@@ -16,6 +16,7 @@ Horst Wessel, a member of the Nazi SA has been killed by, supposedly, two Commun
 @arm_rb_2
 choose-if: resources >= 2
 subtitle: -2 resources
+unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 2; rb_militancy += 0.02; rb_strength += 100; nazi_urgency += 1; pro_republic += 2; nsdap_effectiveness -= 0.03; reformist_dissent -= 5; neorevisionist_dissent -= 15 if neorevisionism == 1; left_dissent -= 10;
 
 If the Nazis are going to toughen up, we need to return the same gesture in order to stay ahead of the Nazis.
