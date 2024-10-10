@@ -2,7 +2,21 @@ title: The Iron Front
 new-page: true
 is-card: true
 view-if: iron_front_formed == 1 and iron_front_timer = 0
-on-arrival: iron_front_timer = 7; month_actions += 1; rb_militarization_cost = 2 if rb_militancy > 0.1 else rb_militarization_cost = 1; rb_militarization_cost = 3 if rb_militancy > 0.25
+on-arrival: {! 
+Q.iron_front_timer = 7; 
+Q.month_actions += 1; 
+if (Q.rb_militancy <= 0.1) {
+  Q.rb_militarization_cost = 1;
+} else if (Q.rb_militancy > 0.1 && Q.rb_militancy <= 0.25) {
+  Q.rb_militarization_cost = 2;
+} else if (Q.rb_militancy > 0.25 && Q.rb_militancy <= 0.5) {
+  Q.rb_militarization_cost = 3;
+} else if (Q.rb_militancy > 0.5 && Q.rb_militancy <= 0.7) {
+  Q.rb_militarization_cost = 4;
+} else {
+  Q.rb_militarization_cost = 5;
+}
+!}
 card-image: img/iron_front.png
 frequency: 200
 tags: party_affairs, antifascism
