@@ -7,9 +7,9 @@ card-image: img/reichsbanner.jpg
 on-arrival: {!
 Q.month_actions += 1;
 Q.reichsbanner_timer += 6;
-if (rb_militancy <= 0.1) {
+if (Q.rb_militancy <= 0.1) {
   Q.rb_strength += 50;
-} else if (rb_militancy > 0.1 and <= 0.25) {
+} else if (Q.rb_militancy > 0.1 and <= 0.25) {
   Q.rb_strength += 100;
 }
 !}
