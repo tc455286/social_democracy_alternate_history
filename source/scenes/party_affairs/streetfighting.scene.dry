@@ -1,7 +1,21 @@
 title: Streetfighting
 new-page: true
 is-card: true
-on-arrival: streetfighting_timer = 6; month_actions += 1; rb_militarization_cost = 2 if rb_militancy > 0.1 else rb_militarization_cost = 1; rb_militarization_cost = 3 if rb_militancy > 0.25
+on-arrival: {! 
+Q.streetfighting_timer = 6; 
+Q.month_actions += 1; 
+if (Q.rb_militancy <= 0.1) {
+  Q.rb_militarization_cost = 1;
+} else if (Q.rb_militancy > 0.1 && Q.rb_militancy <= 0.25) {
+  Q.rb_militarization_cost = 2;
+} else if (Q.rb_militancy > 0.25 && Q.rb_militancy <= 0.5) {
+  Q.rb_militarization_cost = 3;
+} else if (Q.rb_militancy > 0.5 && Q.rb_militancy <= 0.7) {
+  Q.rb_militarization_cost = 4;
+} else {
+  Q.rb_militarization_cost = 5;
+}
+!}
 view-if: year >= 1930 and sa_strength >= 150 and streetfighting_timer == 0
 card-image: img/blutmai_2.jpg
 tags: party_affairs; antifascism
