@@ -8,9 +8,15 @@ on-arrival: {!
 Q.month_actions += 1;
 Q.reichsbanner_timer += 6;
 if (Q.rb_militancy <= 0.1) {
-  Q.rb_strength += 50;
-} else if (Q.rb_militancy > 0.1 and <= 0.25) {
-  Q.rb_strength += 100;
+  Q.rb_militarization_cost = 1;
+} else if (Q.rb_militancy > 0.1 && Q.rb_militancy <= 0.25) {
+  Q.rb_militarization_cost = 2;
+} else if (Q.rb_militancy > 0.25 && Q.rb_militancy <= 0.5) {
+  Q.rb_militarization_cost = 3;
+} else if (Q.rb_militancy > 0.5 && Q.rb_militancy <= 0.7) {
+  Q.rb_militarization_cost = 4;
+} else {
+  Q.rb_militarization_cost = 5;
 }
 !}
 max-visits: 5
