@@ -7,18 +7,19 @@ on-arrival {!
 Q.nsdap_effectiveness += 0.25;
 Q.sa_strength += 250;
 Q.sa_militancy += 0.06;
-Q.workers_nsdap += 7;
+Q.workers_nsdap += 10;
 Q.new_middle_nsdap += 7;
 Q.old_middle_nsdap += 7;
-Q.rural_nsdap += 10;
+Q.rural_nsdap += 7;
 Q.unemployed_nsdap += 10;
 Q.pro_republic -= 5;
 Q.nationalism += 5;
+Q.nazi_urgency += 1;
 if (unemployed > 15) {
 Q.nsdap_effectiveness += 0.1;
 Q.sa_strength += 100;
 Q.sa_militancy += 0.3;
-Q.workers_nsdap += 3;
+Q.workers_nsdap += 5;
 Q.new_middle_nsdap += 3;
 Q.old_middle_nsdap += 3;
 Q.rural_nsdap += 3;
@@ -27,5 +28,9 @@ Q.pro_republic -= 3;
 Q.nationalism += 3;
 }
 !}
+
+= Ernst Rhom Appointed SA Leader
+
+Nazi leader, Adolf Hitler, in the wake of this economic crisis, and seeking to gain power, has appointed Ernst Rhom SA leader. As SA leader, Rhom plans to engage in mass recruiting, militarization, and to make the Nazis more appealing to the working class. The SPD needs to come up with a plan to deal with the rising Nazi threat.
 
 
