@@ -3,7 +3,7 @@ view-if: year == 1931 and month >= 1
 frequency: 1000
 max-visits: 1
 tags: event
-on-arrival {!
+on-arrival: {!
 Q.nsdap_effectiveness += 0.25;
 Q.sa_strength += 250;
 Q.sa_militancy += 0.06;
