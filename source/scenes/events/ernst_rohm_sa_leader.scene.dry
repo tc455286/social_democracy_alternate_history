@@ -33,4 +33,16 @@ Q.nationalism += 3;
 
 Nazi leader, Adolf Hitler, in the wake of this economic crisis, and seeking to gain power, has appointed Ernst Rhom SA leader. As SA leader, Rhom plans to engage in mass recruiting, militarization, and to make the Nazis more appealing to the working class. The SPD needs to come up with a plan to deal with the rising Nazi threat.
 
+- @strategy2: We need to come up with a plan to confront the Nazis.
+- @confronting_nazis.iron_front: We must form the Iron Front!
+- @iron_front: The Iron Front will be our answer!
+
+@strategy2
+view-if: nazi_urgency < 3
+on-arrival: nazi_urgency += 1
+
+
+We do not have a unified plan for dealing with the Nazis. We need to develop one as soon as possible.
+
+
 
