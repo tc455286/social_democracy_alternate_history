@@ -1,1 +1,31 @@
+title: Ernst Rohm appointed SA leader
+view if year == 1931 and month >= 1
+frequency: 1000
+max-visits: 1
+tags: event
+on-arrival {!
+Q.nsdap_effectiveness += 0.25;
+Q.sa_strength += 250;
+Q.sa_militancy += 0.06;
+Q.workers_nsdap += 7;
+Q.new_middle_nsdap += 7;
+Q.old_middle_nsdap += 7;
+Q.rural_nsdap += 10;
+Q.unemployed_nsdap += 10;
+Q.pro_republic -= 5;
+Q.nationalism += 5;
+if (unemployed > 15) {
+Q.nsdap_effectiveness += 0.1;
+Q.sa_strength += 100;
+Q.sa_militancy += 0.3;
+Q.workers_nsdap += 3;
+Q.new_middle_nsdap += 3;
+Q.old_middle_nsdap += 3;
+Q.rural_nsdap += 3;
+Q.unemployed_nsdap += 5;
+Q.pro_republic -= 3;
+Q.nationalism += 3;
+}
+!}
+
 
