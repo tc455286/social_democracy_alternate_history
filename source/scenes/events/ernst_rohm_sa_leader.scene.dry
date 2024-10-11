@@ -15,7 +15,7 @@ Q.unemployed_nsdap += 10;
 Q.pro_republic -= 5;
 Q.nationalism += 5;
 Q.nazi_urgency += 1;
-if (unemployed > 15) {
+if (Q.unemployed > 15) {
 Q.nsdap_effectiveness += 0.1;
 Q.sa_strength += 100;
 Q.sa_militancy += 0.3;
