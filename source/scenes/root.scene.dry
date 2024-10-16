@@ -197,6 +197,7 @@ Q.coup_defeated = 0;
 Q.gdp = 419780000000
 Q.gdppercapita = Q.gdp/Q.population
 Q.population = 66340000
+Q.lifeexpectancy = 59.0
 
 Q.budget = 5;
 
