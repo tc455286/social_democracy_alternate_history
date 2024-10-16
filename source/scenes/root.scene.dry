@@ -193,6 +193,11 @@ Q.coup_progress = 0;
 Q.capital_strike_progress = 0;
 Q.coup_defeated = 0;
 
+// general stats
+Q.gdp = 419780000000
+Q.gdppercapita = Q.gdp/Q.population
+Q.population = 66340000
+
 Q.budget = 5;
 
 // Proportion of different social groups
