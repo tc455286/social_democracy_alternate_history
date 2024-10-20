@@ -200,16 +200,23 @@ Q.population = 66340000
 Q.lifeexpectancy = 59.0
 Q.incomeusd = 350
 
+// social classes
+// unemployed
+Q.poor = 10
+
+
 Q.budget = 5;
 
 // Proportion of different social groups
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
 Q.workers = 48; // industry and trade
-Q.old_middle = 13; // "old mittelstand"
-// 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.new_middle = 14; // "new mittelstand"
-Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
+Q.old_middle = 12.7; // "old mittelstand"
+// 16 trade & commerce, 6.5 public and private services, 4.4 domestic help
+Q.new_middle = 13.8; // "new mittelstand"
+Q.rural = 24.5; // agriculture and forestry employment... but many of those are proletarians so...
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
+Q.nobility = 0.5; // landed aristocrsts and junkers
+Q.capitalists = 0.5; // industrialists, factory owners, and large business owners
 Q.unemployed = 8.6;
 Q.catholics = 30;
 
