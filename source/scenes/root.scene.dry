@@ -205,22 +205,28 @@ Q.budget = 5;
 // Proportion of different social groups
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
 Q.workers = 48; // industry and trade
-Q.avg_workers_income_usd = 350;
+ Q.avg_workers_income_usd = 350;
 // breakdown of workers by social class
-Q.workers_poor = 15
-Q.workers_lower_middle = 20
-Q.workers_upper_middle = 10
+ Q.workers_poor = 15
+ Q.workers_lower_middle = 20
+ Q.workers_upper_middle = 10
 // upper DOES NOT mean upper class or wealthy, mostly skilled workers
-Q.workers_upper = 3
-Q.old_middle = 12.9; // "old mittelstand"
-Q.avg_old_middle_income_usd = 650;
+ Q.workers_upper = 3
+Q.old_middle = 13; // "old mittelstand"
+ Q.avg_old_middle_income_usd = 650;
+ Q.old_middle_lower_middle = 4;
+ Q.old_middle_upper_middle = 8;
+ Q.old_middle_upper = 1;
 // 16 trade & commerce, 6.5 public and private services, 4.4 domestic help
 Q.new_middle = 14; // "new mittelstand"
+ Q.new_middle_lower_middle = 6;
+ Q.new_middle_upper_middle = 7;
+ Q.new_middle_upper = 1;
 Q.avg_new_middle_income_usd = 550;
 Q.rural = 24.5; // agriculture and forestry employment... but many of those are proletarians so...
 Q.avg_rural_income_usd = 400;
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.nobility = 0.5; // landed aristocrsts and junkers
+Q.nobility = 0.4; // landed aristocrsts and junkers
 Q.avg_nobility_income_usd = 50000
 Q.capitalists = 0.1; // industrialists, factory owners, and large business owners
 Q.avg_capitalist_income_usd = 50000
