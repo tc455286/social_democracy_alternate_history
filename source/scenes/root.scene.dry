@@ -206,6 +206,12 @@ Q.budget = 5;
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
 Q.workers = 48; // industry and trade
 Q.avg_workers_income_usd = 350;
+// breakdown of workers by social class
+Q.workers_poor = 15
+Q.workers_lower_middle = 20
+Q.workers_upper_middle = 10
+// upper DOES NOT mean upper class or wealthy, mostly skilled workers
+Q.workers_upper = 3
 Q.old_middle = 12.9; // "old mittelstand"
 Q.avg_old_middle_income_usd = 650;
 // 16 trade & commerce, 6.5 public and private services, 4.4 domestic help
