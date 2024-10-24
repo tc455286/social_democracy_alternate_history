@@ -222,8 +222,12 @@ Q.new_middle = 14; // "new mittelstand"
  Q.new_middle_lower_middle = 6;
  Q.new_middle_upper_middle = 7;
  Q.new_middle_upper = 1;
-Q.avg_new_middle_income_usd = 550;
+ Q.avg_new_middle_income_usd = 550;
 Q.rural = 24.5; // agriculture and forestry employment... but many of those are proletarians so...
+ Q.rural_poor = 10;
+ Q.rural_lower_middle = 7;
+ Q.rural_upper_middle = 6;
+ Q.rural_upper = 1.5;
 Q.avg_rural_income_usd = 400;
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
 Q.nobility = 0.4; // landed aristocrsts and junkers
