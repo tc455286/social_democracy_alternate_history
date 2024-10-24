@@ -198,7 +198,6 @@ Q.gdp = 419780000000;
 Q.gdppercapita = Q.gdp/Q.population;
 Q.population = 66340000;
 Q.lifeexpectancy = 59.0;
-Q.incomeusd = 350;
 
 
 Q.budget = 5;
@@ -206,14 +205,21 @@ Q.budget = 5;
 // Proportion of different social groups
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
 Q.workers = 48; // industry and trade
-Q.old_middle = 12.7; // "old mittelstand"
+Q.avg_workers_income_usd = 350;
+Q.old_middle = 12.9; // "old mittelstand"
+Q.avg_old_middle_income_usd = 650;
 // 16 trade & commerce, 6.5 public and private services, 4.4 domestic help
-Q.new_middle = 13.8; // "new mittelstand"
+Q.new_middle = 14; // "new mittelstand"
+Q.avg_new_middle_income_usd = 550;
 Q.rural = 24.5; // agriculture and forestry employment... but many of those are proletarians so...
+Q.avg_rural_income_usd = 400;
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
 Q.nobility = 0.5; // landed aristocrsts and junkers
-Q.capitalists = 0.5; // industrialists, factory owners, and large business owners
+Q.avg_nobility_income_usd = 50000
+Q.capitalists = 0.1; // industrialists, factory owners, and large business owners
+Q.avg_capitalist_income_usd = 50000
 Q.unemployed = 8.6;
+Q.avgunemployed_income_usd = 0;
 Q.catholics = 30;
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
